@@ -10,34 +10,41 @@ use Illuminate\Http\Request;
 class ProfilsController extends Controller
 {
 
-    public function getProfile (Request $request)
+    public function getProfile (Request $request, $id)
     {
-        $user_id = $request->get('user_id');
-        $profile = Profile::where('user_id',$user_id)
-             ->get()
-             ->first()
+
+        $profile = Profile::find($id)
              ->getOriginal();
         return response()
              ->json($profile, 200);
     }
-    public function removeProfile (Request $request)
+
+
+    public function removeProfile (Request $request, $id)
     {
-//        return response()->json($request->user());
+        $user = Auth::user();
+        $profile = Profile::find($id);
+        $profile->delete();
+        $user->delete();
+        $request->user()->token()->revoke();
+        return response()->json([
+            "message" => "User delete successfully"
+        ],200);
+
     }
 
-    public function updateProfile (Request $request)
+    public function updateProfile (Request $request, $id)
     {
+        $old_profile = Profile::find($id);
+
         $request->validate([
-            'email' => 'string|email|unique:users|required',
+            'email' => 'string|email|required',
             'password' => 'string|required',
         ]);
+
         $user = Auth::user();
+        $profile = Profile::find($id);
 
-        $nick = $user->nickname === $request->get('nickname')? $user->nickname:$request->get('nickname');
-        $password = $user->password === $request->get('password')? $user->nickname:$request->get('password');
-        $email = $user->email === $request->get('email')? $user->nickname:$request->get('email');
-
-//        $user_table = User::where('id', $request->get('user_id'))->get();
         $pattern = '/^\+380\d{3}\d{2}\d{2}\d{2}$/';
 
         if($request->get('number') != null){
@@ -48,12 +55,18 @@ class ProfilsController extends Controller
                 ]);
             }
         }
-
-//        dd($user);
         if ( $user->update($request->only(['nickname', 'email', 'password'])) ) {
+            $profile->name= $request->get('name') == null ? $old_profile->name :$request->get('name');
+            $profile->nickname= $request->get('nickname') == null ? $old_profile->nickname :$request->get('nickname');
+            $profile->number= $request->get('number') == null ? $old_profile->number :$request->get('number');
+            $profile->surname= $request->get('surname') == null? $old_profile->surname :$request->get('surname');
+            $profile->last_name= $request->get('last_name') == null? $old_profile->last_name :$request->get('last_name');
+            $profile->email= $request->get('email') == null? $old_profile->email :$request->get('email');
+            $profile->update();
             return response()->json([
                 'message' => 'Successfully updated user!',
-                'user' => $user
+                'user' => $user,
+                "profile" => $profile
             ], 200);
         } else {
             return response()->json([

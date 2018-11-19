@@ -16,13 +16,13 @@ Route::group([
 ], function() {
     Route::get('logout', 'AuthController@logout');
 
-    Route::post('profile', 'ProfilsController@getProfile');
-    Route::put('update_profile', 'ProfilsController@updateProfile');
+    Route::get('profile/{id}', 'ProfilsController@getProfile');
+    Route::post('update_profile/{id}', 'ProfilsController@updateProfile');
+    Route::delete('remove_profile/{id}', 'ProfilsController@removeProfile');
 
-
-    Route::put('currentUser', 'AuthController@updateCurrentUser');
-
-    Route::get('users', 'UserController@getUsers');
-    Route::get('users/{id}', 'UserController@getUser')->where('id', '[0-9]+');
+    Route::get('profile/{id}/tasks', 'TasksController@getTasksUser');
+    Route::post('profile/{id}/tasks', 'TasksController@addTaskUser');
+    Route::post('profile/{id}/update_task/{id_task}', 'TasksController@updateTasksUser');
+    Route::delete('profile/{id}/remove_task/{id_task}', 'TasksController@removeTaskUser');
 
 });
