@@ -26,6 +26,7 @@ class AuthController extends Controller
             'email' => 'required|string|email|unique:users',
             'password' => 'required|string'
         ]);
+
         $user = new User([
             'nickname' => $request->nickname,
             'email' => $request->email,
@@ -47,7 +48,8 @@ class AuthController extends Controller
 //        }
 
         return response()->json([
-            'message' => 'Successfully created user!'
+            'message' => 'Successfully created user!',
+            'profile' => $profile
         ], 201);
     }
 
