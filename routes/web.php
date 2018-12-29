@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/{any}', 'AppController@index')->where('any', '.*');
+//Route::get('to_google', 'AuthController@toGoogle');
+Route::get('to_google', 'AuthController@login_google');
+Route::get('login/socialite/{type}', 'Socialise@redirectToProvider');
+Route::get('login/google/callback/{type}', 'Socialise@handleProviderCallback');

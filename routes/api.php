@@ -7,8 +7,11 @@ use Illuminate\Http\Request;
 | API Routes
 |--------------------------------------------------------------------------|
 */
-
+//Route::post('home', 'AuthController@login');
 Route::post('login', 'AuthController@login');
+Route::get('login/socialite/{type}', 'Socialise@redirectToProvider');
+Route::get('login/socialite/callback/{type}', 'Socialise@handleProviderCallback');
+
 Route::post('register', 'AuthController@signup');
 
 Route::group([

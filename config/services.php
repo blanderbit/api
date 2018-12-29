@@ -40,4 +40,9 @@ return [
         ],
     ],
 
+    'google' => [
+        'client_id' => env('GOOGLE_CLIENT_ID','96294338488-5tng7sno39bhida15mvvpe430f1adq9u.apps.googleusercontent.com'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET','XwnBltuzTdzU1jyueKKbatjy'),
+        'redirect' => 'http://127.0.0.1:8000/login/google/callback/google',
+    ],
 ];

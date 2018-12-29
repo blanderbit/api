@@ -17,7 +17,7 @@ class CreateTableProfiles extends Migration
             Schema::create('profiles', function (Blueprint $table) {
                 $table->increments('id');
                 $table->integer('user_id');
-                $table->string('nickname');
+                $table->string('nickname')->nullable();
                 $table->string('name')->nullable();
                 $table->string('surname')->nullable();
                 $table->string('last_name')->nullable();
