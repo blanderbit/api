@@ -7,11 +7,11 @@
  */
 namespace App\Helpers;
 use App\User;
-use App\Session;
 use App\Profile;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 class Helper
 {
@@ -19,7 +19,7 @@ class Helper
         $user = User::firstOrCreate([
             'email'    => $data->email], [
             'nickname' => $data->nickname,
-            'password' => bcrypt($data->password),
+            'password' => Hash::make($data->password)
         ]);
         $profile = Profile::firstOrCreate(['email' => $data->email],[
             "nickname"   => $user->nickname,
@@ -40,12 +40,15 @@ class Helper
              'status' => 'ok',
              'data' => (array) $send_profile,
              'password' => $data->password,
-             'token' => $tokenResult->accessToken
+             'token' => $tokenResult->accessToken,
+             'id' => $user->id
             ]);
         } else if ($name == 'local'){
             return (['status' => 'ok']);
         }
     }
+
+
     public static function autorization($data, $credentials, $name){
         if (!Auth::attempt($credentials)){
             return ([

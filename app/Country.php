@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Session extends Model
+class Country extends Model
 {
     protected $fillable = [
-        'token', 'email', 'password'
+        'short', 'full_rus', 'full_eng'
     ];
 }

@@ -66,6 +66,7 @@
     <body>
         <div id="app" class="flex-center position-ref full-height">
             <example-component></example-component>
+            <img src="/images/contact-photo.img">
         </div>
     <script src="{{ asset('js/app.js') }}"></script>
     </body>

@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use App\User;
 use App\Profile;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 class AuthController extends Controller
 {
@@ -42,7 +43,6 @@ class AuthController extends Controller
             'remember_me' => 'boolean'
         ]);
         $credential = request(['email', 'password']);
-
         $login = Helper::autorization($request, $credential, 'local');
         if($login['status'] == 'err'){
             return response()->json($login,401);
