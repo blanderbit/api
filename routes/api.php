@@ -56,6 +56,7 @@ Route::group([
 //    Route::post('profile/{id}/{id_project}/update_task/{id_task}', 'TasksController@updateTaskProjectUser');
 //    Route::delete('profile/{id}/{id_project}/remove_task/{id_task}', 'TasksController@removeTaskProjectUser');
 
-    Route::post('fileUpload', 'ProfilsController@fileUpload');
+
 
 });
+Route::post('fileUpload', 'ProfilsController@fileUpload');

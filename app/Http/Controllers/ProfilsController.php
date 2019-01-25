@@ -97,7 +97,7 @@ class ProfilsController extends Controller
                 return response()->json($validate->errors(), 400);
             };
             $file->move(public_path() . '/images',
-                $unix_timestamp_name.'-'.$file->getClientOriginalName());
+                $unix_timestamp_name.'-'.$file->getClientOriginalName().".png");
             return response()->json([
                 'message' => 'upload successfully',
                 'link'    => $server.'/images/'.$unix_timestamp_name.'-'
