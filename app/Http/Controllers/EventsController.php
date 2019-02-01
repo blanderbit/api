@@ -12,7 +12,8 @@ class EventsController extends Controller
 {
     public function getEvents(Request $request)
     {
-        $old_events = Event::paginate();
+        $old_events = Event::orderByDesc('id')
+            ->paginate();
         return response()->json($old_events);
     }
 
@@ -69,7 +70,7 @@ class EventsController extends Controller
         $event->save();
         return response()->json([
             'message' => 'Successfully created event!',
-            'event' => $event
+            'event' => Event::find($event->id)
         ],200);
     }
     public function updateUserOneEvent(Request $request, $id, $id_event)

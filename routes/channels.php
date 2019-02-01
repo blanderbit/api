@@ -11,6 +11,15 @@
 |
 */
 
-Broadcast::channel('App.User.{id}', function ($user, $id) {
-    return (int) $user->id === (int) $id;
+//Broadcast::channel('App.User.{id}', function ($user, $id) {
+//    return (int) $user->id === (int) $id;
+//});
+
+use Illuminate\Support\Facades\Broadcast;
+
+Broadcast::channel('chat.{chat_id}', function ($user, $chat_id) {
+//    return (int) $user->chat_id === (int) $id;
+//    dd($user);
+
+    return false;
 });

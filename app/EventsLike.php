@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class EventsLike extends Model
 {
     protected $fillable = [
-        'events_id', 'id_user'
+        'events_id', 'id_user', 'date'
     ];
 
     protected $with = ['profile'];

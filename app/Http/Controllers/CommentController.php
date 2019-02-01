@@ -11,7 +11,7 @@ class CommentController extends Controller
 //    get
     public function getCommentsForEvent(Request $request, $id_events)
     {
-        $comments = Comment::where('event_id', $id_events)->paginate();
+        $comments = Comment::where('event_id', $id_events)->orderByDesc('id')->paginate();
         return response()->json($comments, 200);
     }
     public function getOneCommentForEvent(Request $request, $id_events, $id_comment)
@@ -28,7 +28,10 @@ class CommentController extends Controller
         $comment = new Comment($request->all());
         $comment->event_id = $id_event;
         $comment->save();
-        return response()->json($comment, 200);
+        return response()->json([
+            'data' => $comment,
+            'message' => 'ok'
+        ], 200);
     }
 
     public function updateCommentForEvent(Request $request, $id_comments)

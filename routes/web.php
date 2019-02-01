@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Broadcast::routes();
 //Route::get('/{any}', 'AppController@index')->where('any', '.*');
 //Route::get('to_google', 'AuthController@toGoogle');
 Route::get('to_google', 'AuthController@login_google');

@@ -10,7 +10,6 @@ class Event extends Model
     protected $fillable = [
         'event_name', 'about_event', 'deadline', 'location', 'link', 'member'
     ];
-
 //
     protected $with = ['profile'];
     protected $withCount = ['comment','likes'];
@@ -47,7 +46,6 @@ class Event extends Model
     {
         return $this->hasMany(Comment::class);
     }
-
 //    public function profile()
 //    {
 //        return $this->hasOne(Profile::class);

@@ -15,7 +15,60 @@ class ProfilsController extends Controller
 
     public function getProfile (Request $request, $id)
     {
-
+//        /**
+//         * @SWG\Swagger(
+//         *     schemes={"http","https"},
+//         *     host="api.host.com",
+//         *     basePath="/",
+//         *     @SWG\Info(
+//         *         version="1.0.0",
+//         *         title="This is my website cool API",
+//         *         description="Api description...",
+//         *         termsOfService="",
+//         *         @SWG\Contact(
+//         *             email="contact@mysite.com"
+//         *         ),
+//         *         @SWG\License(
+//         *             name="Private License",
+//         *             url="URL to the license"
+//         *         )
+//         *     ),
+//         *     @SWG\ExternalDocumentation(
+//         *         description="Find out more about my website",
+//         *         url="http..."
+//         *     )
+//         * )
+//         */
+//        /**
+//         * @SWG\Schema()
+//         * @SWG\Get(
+//         *     schemes={"http","https"},
+//         *     path="/posts/{post_id}",
+//         *     summary="Get blog post by id",
+//         *     tags={"Posts"},
+//         *     description="Get blog post by id",
+//         *     @SWG\Parameter(
+//         *         name="post_id",
+//         *         in="path",
+//         *         description="Post id",
+//         *         required=true,
+//         *         type="integer",
+//         *     ),
+//         *     @SWG\Response(
+//         *         response=200,
+//         *         description="successful operation",
+//         *         @SWG\Schema(ref="#/definitions/Post"),
+//         *     ),
+//         *     @SWG\Response(
+//         *         response="401",
+//         *         description="Unauthorized user",
+//         *     ),
+//         *     @SWG\Response(
+//         *         response="404",
+//         *         description="Post is not found",
+//         *     )
+//         * )
+//         */
         $profile = Profile::where('user_id',$id)
              ->first();
         return response()
@@ -86,8 +139,9 @@ class ProfilsController extends Controller
         }
     }
     public function fileUpload(Request $request){
-        $unix_timestamp_name = now()->timestamp.str_random(14);
+        $unix_timestamp_name = now()->timestamp.str_random(24);
         $server = "http://127.0.0.1:8000";
+        $isHttps = !empty($_SERVER['HTTPS']) && 'off' !== strtolower($_SERVER['HTTPS']);
         if($request->hasFile('image')) {
             $file = $request->file('image');
             $validate = Validator::make(["image"=> $file->getSize()],[
@@ -96,12 +150,13 @@ class ProfilsController extends Controller
             if($validate->fails()){
                 return response()->json($validate->errors(), 400);
             };
-            $file->move(public_path() . '/images',
-                $unix_timestamp_name.'-'.$file->getClientOriginalName().".png");
+//            dd($_SERVER);
+//            dd(public_path());
+            $file->move(public_path().'/images',
+                $unix_timestamp_name.".png");
             return response()->json([
                 'message' => 'upload successfully',
-                'link'    => $server.'/images/'.$unix_timestamp_name.'-'
-                    .$file->getClientOriginalName(),
+                'link'    => $server.'/images/'.$unix_timestamp_name.".png",
             ]);
         } else {
             return response()->json([
@@ -120,3 +175,4 @@ class ProfilsController extends Controller
     }
 
 }
+

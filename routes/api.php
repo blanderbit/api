@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-
+use App\Events\Chat;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +14,9 @@ Route::get('login/socialite/{type}', 'Socialise@redirectToProvider');
 Route::get('login/socialite/callback/{type}', 'Socialise@handleProviderCallback');
 
 Route::post('register', 'AuthController@signup');
+Route::post('message', function (Illuminate\Http\Request $request){
+    Chat::dispatch($request->all());
+});
 
 
 

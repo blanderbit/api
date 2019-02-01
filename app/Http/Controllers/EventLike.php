@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 use App\EventsLike;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class EventLike extends Controller
 {
     public function getLikeForEvents(Request $request, $events_id)
     {
-        $like = EventsLike::where('events_id', $events_id)->paginate();;
+        $like = EventsLike::where('events_id', $events_id)->orderByDesc('id')->paginate();;
         return response()->json($like, 200);
     }
 
@@ -19,6 +20,8 @@ class EventLike extends Controller
         if($like == null){
             $like_events = new EventsLike($request->all());
             $like_events->events_id = $events_id;
+            $like_events->date = Carbon::now();
+//            dd($like_events,$request->all());
             $like_events->save();
             return response()->json([
                 'message' => 'like create',
