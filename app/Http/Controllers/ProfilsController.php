@@ -10,65 +10,13 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Validator;
+use PDF;
+//require_once __DIR__ . '/vendor/autoload.php';
 class ProfilsController extends Controller
 {
 
     public function getProfile (Request $request, $id)
     {
-//        /**
-//         * @SWG\Swagger(
-//         *     schemes={"http","https"},
-//         *     host="api.host.com",
-//         *     basePath="/",
-//         *     @SWG\Info(
-//         *         version="1.0.0",
-//         *         title="This is my website cool API",
-//         *         description="Api description...",
-//         *         termsOfService="",
-//         *         @SWG\Contact(
-//         *             email="contact@mysite.com"
-//         *         ),
-//         *         @SWG\License(
-//         *             name="Private License",
-//         *             url="URL to the license"
-//         *         )
-//         *     ),
-//         *     @SWG\ExternalDocumentation(
-//         *         description="Find out more about my website",
-//         *         url="http..."
-//         *     )
-//         * )
-//         */
-//        /**
-//         * @SWG\Schema()
-//         * @SWG\Get(
-//         *     schemes={"http","https"},
-//         *     path="/posts/{post_id}",
-//         *     summary="Get blog post by id",
-//         *     tags={"Posts"},
-//         *     description="Get blog post by id",
-//         *     @SWG\Parameter(
-//         *         name="post_id",
-//         *         in="path",
-//         *         description="Post id",
-//         *         required=true,
-//         *         type="integer",
-//         *     ),
-//         *     @SWG\Response(
-//         *         response=200,
-//         *         description="successful operation",
-//         *         @SWG\Schema(ref="#/definitions/Post"),
-//         *     ),
-//         *     @SWG\Response(
-//         *         response="401",
-//         *         description="Unauthorized user",
-//         *     ),
-//         *     @SWG\Response(
-//         *         response="404",
-//         *         description="Post is not found",
-//         *     )
-//         * )
-//         */
         $profile = Profile::where('user_id',$id)
              ->first();
         return response()
@@ -173,6 +121,175 @@ class ProfilsController extends Controller
             ->get();
         return response()->json(['data' => $country], 200);
     }
+    public function pdfCr(Request $request, $id){
+        $filename = md5(time());
+        function base64_to_jpeg( $base64_string, $output_file ) {
+            $ifp = fopen( $output_file, "wb" );
+            $data = explode( ',', $base64_string );
 
+            fwrite( $ifp, base64_decode( $data[1]) );
+            fclose( $ifp );
+            return( $output_file );
+        }
+            $image1 = base64_to_jpeg( $request->all()['image'], $request->all()['count'].$id.'.png' );
+        return response()->json([
+            'id' => $id.'.png',
+            "img"=> $image1
+        ]);
+    }
+    public function pdf(Request $request, $id){
+//        header('Content-type: application/pdf');
+//        header('Content-disposition: attachment; filename=some.pdf');
+
+        $defaultConfig = (new \Mpdf\Config\ConfigVariables())->getDefaults();
+        $fontDirs = $defaultConfig['fontDir'];
+
+        $defaultFontConfig = (new \Mpdf\Config\FontVariables())->getDefaults();
+        $fontData = $defaultFontConfig['fontdata'];
+//dd(__DIR__ . '/storage/fonts');
+        $mpdf = new \Mpdf\Mpdf(
+
+            [
+            'fontDir' => array_merge($fontDirs, [
+              '/home/cubex/all_project/api/storage/fonts',
+            ]),
+            'fontdata' => $fontData + [
+                    'taprom' => [
+                        'R' => 'Taprom.ttf',
+                    ],
+                    'montserrat' => [
+                        'R' => 'Montserrat-Regular.ttf',
+                    ]
+                ],
+            'default_font' => 'montserrat'
+        ]
+
+        );
+//        $mpdf
+
+        function get_image($name){
+            $im = file_get_contents($name.'.png');
+            $siz3e = getimagesize($name.'.png');
+            $image = base64_encode($im);
+            return 'data:'.$siz3e['mime'].';base64,'.$image;
+        }
+//        $mpdf = new \Mpdf\Mpdf();
+        $mpdf->WriteHTML(view('p1'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p2'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p3'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p4'));
+
+        $mpdf->AddPage();
+
+
+        $data1 = get_image('1'.$id);
+        $mpdf->WriteHTML(view('p5', compact('data1')));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p6'));
+
+        $data2 = get_image('2'.$id);
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p7', compact('data2')));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p8'));
+
+//        $mpdf->AddPage();
+//        $mpdf->WriteHTML(view('p9_horizontal'));
+
+        $data3 = get_image('3'.$id);
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p9_reports', compact('data3')));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p10'));
+
+        $data4 = get_image('4'.$id);
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p11', compact('data4')));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p12'));
+
+        $data5 = get_image('5'.$id);
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p13', compact('data5')));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p14'));
+
+        $data6 = get_image('6'.$id);
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p15', compact('data6')));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p16'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p17'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p18'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p19'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p20'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p21'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p22'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p23'));
+
+        $mpdf->AddPage();
+        $width = '120px';
+        $mpdf->WriteHTML(view('p24', compact('width')));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p25'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p26'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p27'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p28'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p29'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p30'));
+
+        $mpdf->AddPage();
+        $mpdf->WriteHTML(view('p31'));
+        $mpdf->Output();
+
+//'welcome.pdf', \Mpdf\Output\Destination::DOWNLOAD
+//        return $pdf->download('welcome.pdf');
+    }
+    public function diagrams(Request $request, $id_unicum){
+        $one = '1,2,3,4,5, 100';
+        $two = '60,30,80,19,70,10';
+        $three = '30,90,80,9,10,70';
+        $four = '20,90,40,29,60,40';
+        $five = '10,90,20,39,80,40';
+        $six = '40,30,50,29,70,30';
+        return view('first_page', compact('id_unicum', 'one', 'two', 'three', 'four', 'five', 'six'));
+    }
 }
 

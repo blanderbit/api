@@ -17,11 +17,13 @@ Route::post('register', 'AuthController@signup');
 Route::post('message', function (Illuminate\Http\Request $request){
     Chat::dispatch($request->all());
 });
-
+//broadcasting/auth
 
 
 Route::get('country', 'ProfilsController@getCountry');
-
+Route::post('post/{id}', 'ProfilsController@pdfCr');
+Route::get('pdf/{id}', 'ProfilsController@pdf');
+Route::get('diagrams/{id_unicum}', 'ProfilsController@diagrams');
 
 Route::group([
     'middleware' => ['auth:api']
@@ -29,6 +31,7 @@ Route::group([
     Route::get('logout', 'AuthController@logout');
     Route::post('test', 'AuthController@test');
     Route::get('profile/{id}', 'ProfilsController@getProfile');
+
 
     Route::post('update_profile/{id}', 'ProfilsController@updateProfile');
     Route::delete('remove_profile/{id}', 'ProfilsController@removeProfile');
@@ -43,6 +46,13 @@ Route::group([
 
     Route::post('event/toggle_like_for_event/{id_event}', 'EventLike@toggleLikeForEvents');
     Route::get('event/{id_event}/get_likes', 'EventLike@getLikeForEvents');
+
+    Route::post('/broadcasting/auth', function (Illuminate\Http\Request $request) {
+//    return response()->json('error', 200);
+        // Chats::where()
+        return response()->json(request()->channel_name, 401);
+    });
+
 
     Route::post('profile/add_comment_for_event/{id_event}', 'CommentController@addCommentForEvent');
     Route::post('profile/update_comment_for_event/{id_comments}', 'CommentController@updateCommentForEvent');

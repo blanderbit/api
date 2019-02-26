@@ -15,11 +15,9 @@
 //    return (int) $user->id === (int) $id;
 //});
 
-use Illuminate\Support\Facades\Broadcast;
-
 Broadcast::channel('chat.{chat_id}', function ($user, $chat_id) {
 //    return (int) $user->chat_id === (int) $id;
-//    dd($user);
-
-    return false;
+//    dd($chat_id,$user);/
+    return response()->json(\Illuminate\Support\Facades\Auth::user(), 401);
+//    return false;
 });

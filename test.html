@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Different Point Sizes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+<div style="width:800px">
+    <canvas id="canvas"></canvas>
+</div>
+<script>
+    'use strict';
+
+    Chart.defaults.multicolorLine = Chart.defaults.line;
+    Chart.controllers.multicolorLine = Chart.controllers.line.extend({
+        draw: function(ease) {
+            var ctx = this.chart.ctx;
+            // debugger
+            var
+                startIndex = 0,
+                meta = this.getMeta(),
+                points = meta.data || [],
+                colors = this.getDataset().colors,
+                data = this.getDataset().data,
+                area = this.chart.chartArea,
+                originalDatasets = meta.dataset._children
+                    .filter(function(data) {
+                        return !isNaN(data._view.y);
+                    });
+            function _setColor(newColor, meta) {
+                meta.dataset._view.borderColor = newColor;
+            }
+
+            if (!colors) {
+                Chart.controllers.line.prototype.draw.call(this, ease);
+                return;
+            }
+
+            for (var i = 2; i <= colors.length; i++) {
+                if (colors[i-1] !== colors[i]) {
+                    _setColor(colors[i-1], meta);
+                    meta.dataset._children = originalDatasets.slice(startIndex, i);
+                    meta.dataset.draw();
+                    startIndex = i - 1;
+                }
+            }
+
+            meta.dataset._children = originalDatasets.slice(startIndex);
+            meta.dataset.draw();
+            meta.dataset._children = originalDatasets;
+
+            points.forEach(function(point, index) {
+                point._view.borderColor = colors[index];
+                // ctx.fillText(222, 222, 222);
+                ctx.shadowColor = 'rgba(0, 0, 0, 0.35)';
+                ctx.shadowBlur = 8;
+                ctx.shadowOffsetX = 1;
+                ctx.shadowOffsetY = 1;
+                point.draw(area);
+            });
+        }
+    });
+    var config = {
+        type: 'multicolorLine',
+        data: {
+            labels: ['', 'R', 'I', 'A', 'S', 'E', 'C', ''],
+            datasets: [{
+                label: "Stock A",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "blue",
+                borderColor: "red", // The main line color
+                borderCapStyle: 'square',
+                borderDash: [], // try [5, 15] for instance
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "black",
+                pointBackgroundColor: "white",
+                pointBorderWidth: 3,
+                pointHoverRadius: 8,
+                pointHoverBackgroundColor: "yellow",
+                pointHoverBorderColor: "brown",
+                pointHoverBorderWidth: 0,
+                pointRadius: 18,
+                pointHitRadius: 18,
+                // notice the gap in the data and the spanGaps: true
+                data: [, 100, 59, 80, 81, 56, 8,],
+                colors: ['', '#F59A9A', '#4876D0', '#77DCC1', '#85B1F5', '#FDC572', '#F9892E'],
+                spanGaps: false,
+            }]
+        },
+        options: {
+            // responsive: true,
+            legend: {
+                position: 'bottom',
+                display: false
+            },
+            hover: {
+                // mode: 'index'
+                display: false
+            },
+            showTooltips: false,
+            events: false,
+            scales: {
+                xAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: true,
+                        // labelString: 'Month'
+                    },
+                    ticks: {
+                        fontColor: 'black',
+                    },
+                }],
+                yAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: true,
+                        // labelString: 'Value'
+                    },
+                    ticks: {
+                        beginAtZero:true,
+                        min:- 20,
+                        max:110,
+                        stepSize:50,
+                        fontColor: 'black',
+                        paddingLeft: 30,
+                    },
+                    afterBuildTicks: function(humdaysChart) {
+                        humdaysChart.ticks = [];
+
+                        humdaysChart.paddingLeft = 20;
+                        humdaysChart.left = 20;
+                        humdaysChart.margins.left = 20;
+                        // humdaysChart.ticks.push(- 5);
+                        humdaysChart.ticks.push(0);
+                        humdaysChart.ticks.push(20);
+                        humdaysChart.ticks.push(40);
+                        humdaysChart.ticks.push(60);
+                        humdaysChart.ticks.push(80);
+                        humdaysChart.ticks.push(100);
+                    },
+                }]
+            },
+            animation: {
+                onComplete: function(animation) {
+                    var chartInstance = this.chart,
+                        ctx = chartInstance.ctx;
+                    this.data.datasets.forEach(function (dataset, i) {
+                        var meta = chartInstance.controller.getDatasetMeta(i);
+                        // console.log(meta);
+                        var data = meta.controller._data.reverse();
+                        console.log(data)
+                        meta.data.reverse().forEach(function (bar, index) {
+                            ctx.beginPath();
+                            ctx.fillStyle = 'black';
+                            ctx.mode= 'index';
+                            ctx.fill();
+                            ctx.stroke();
+                            if (data[index] < 10) {
+                                ctx.fillText(data[index], bar._model.x - 2, bar._model.y + 4);
+                            } else if(data[index] == 100){
+                                ctx.fillText(data[index], bar._model.x - 10, bar._model.y + 4);
+                            } else {
+                                ctx.fillText(data[index], bar._model.x - 6, bar._model.y + 4);
+                            }
+                        });
+                    });
+                }
+            },
+            title: {
+                display: false,
+                // text: 'Chart.js Line Chart - Different point sizes'
+            }
+        }
+    };
+
+    var ctx = document.getElementById('canvas').getContext('2d');
+    new Chart(ctx, config);
+
+
+
+</script>
+</body>
+
+</html>

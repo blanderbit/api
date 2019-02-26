@@ -9,6 +9,6 @@ class AppController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        return view('first_page');
     }
 }

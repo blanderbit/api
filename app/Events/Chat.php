@@ -20,10 +20,10 @@ class Chat implements ShouldBroadcast
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct($dat)
     {
-        $this->data = $data;
-        $this->dontBroadcastToCurrentUser();
+        $this->data = $dat;
+//        $this->dontBroadcastToCurrentUser();
     }
 
     /**
