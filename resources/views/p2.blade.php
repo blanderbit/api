@@ -2,7 +2,8 @@
     .list {
         font-size: 12px;
         margin-bottom: 24px;
-        font-weight: bold;
+        font-weight: 500;
+        color: #000000
     }
 </style>
 
@@ -22,18 +23,6 @@
             </div>
         </div>
     </header>
-<div style="font-family: taprom;">
-LOL
-</div>
-    <div style="font-family: montserrat;">
-LOL
-</div>
-    <div style="font-family: montserrat;font-weight: 800">
-LOL
-</div>
-    <div >
-LOL
-</div>
     <div>
         <h2 style="font-size: 12px; text-align: center">CONTENT</h2>
 

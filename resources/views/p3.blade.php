@@ -1,5 +1,10 @@
 <style>
-
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('fonts/Montserrat-ExtraBold.ttf') format('ttf'),
+        url('fonts/Montserrat-ExtraBold.ttf') format('ttf');
+        font-weight: 800;
+        font-style: normal;}
 </style>
 <div >
     <header style="margin-bottom: 26px;">
@@ -55,26 +60,26 @@
             </div>
         </div>
 
-        <div style="font-size: 12px; font-weight: bold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px; margin-top: 21px;">
+        <div style="font-size: 13px; color:#333333; font-family: new; font-weight: 600 !important; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px; margin-top: 21px;">
             2. Introduction
         </div>
 
-        <p style="margin: 15px 0">
+        <p style="margin: 15px 0; line-height: 22px">
             In this report an analysis is made of your personality profile and the professions that will fit this
             profile based on the career test questionnaire you just made on Careertestpro.com.
         </p>
-        <p style="margin: 15px 0">
+        <p style="margin: 15px 0; line-height: 22px">
             The career test that you took is based on the <span style="font-weight: bold;">RIASEC Theory of Dr.John
             Holland</span>. His philosophy is at the root of many other career tests that are used worldwide. This
             theory is also the most influential in its field on which more than <span style="font-weight: bold;">500
             scientific studies are based.</span>
         </p>
-        <p style="margin: 15px 0">
+        <p style="margin: 15px 0; line-height: 22px">
             The <span style="font-weight: bold;">RIASEC theory</span> is based on <span style="font-weight: bold;">
             6 different personality characteristics</span>, being:
         </p>
 
-        <div>
+        <div style="font-family: sans;">
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #F59A9A; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
                 <table>
                     <tr>
@@ -92,7 +97,7 @@
             </table>
         </div>
 
-        <div style="margin-top: 10px;">
+        <div style="margin-top: 10px; font-family: sans;">
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #4876D0; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
                 <table><tr><td style="width: 30px; height: 30px; text-align: center">I</td></tr></table>
             </div>
@@ -106,7 +111,7 @@
             </table>
         </div>
 
-        <div style="margin-top: 10px;">
+        <div style="margin-top: 10px; font-family: sans;">
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #77DCC1; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
                 <table>
                     <tr>
@@ -118,7 +123,7 @@
             <table style="margin-left: 15px; width: 70%"><tr><td style="height: 30px">Artistic personality type - <span style="font-weight: bold;">Creators</span>;</td></tr></table>
         </div>
 
-        <div style="margin-top: 10px;">
+        <div style="margin-top: 10px; font-family: sans;">
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #85B1F5; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
                 <table><tr><td style="width: 30px; height: 30px; text-align: center">S</td></tr></table>
             </div>
@@ -131,7 +136,7 @@
             </table>
         </div>
 
-        <div style="margin-top: 10px;">
+        <div style="margin-top: 10px; font-family: sans;">
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #FDC572; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
                 <table><tr><td style="width: 30px; height: 30px; text-align: center">E</td></tr></table>
             </div>
@@ -145,7 +150,7 @@
             </table>
         </div>
 
-        <div style="margin-top: 10px;">
+        <div style="margin-top: 10px; font-family: sans;">
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #F9892E; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
                 <table><tr><td style="width: 30px; height: 30px; text-align: center">C</td></tr></table>
             </div>
@@ -160,14 +165,14 @@
         </div>
     </div>
 
-    <p style="margin-top: 13px;">
+    <p style="margin-top: 13px; line-height: 22px">
         These 6 personality characteristics will be discussed in depth later on in this report, so you get to know in
         detail what they stand for. It is often the case that there are multiple personality types that fit one person.
         Everyone has something of all of these characteristic features in their personality.
     </p>
 
-    <p style="margin-top: 20px;">
-        The method used by <span style="font-weight: bold;">Careertestpro</span> is based on a combination of a
+    <p style="margin-top: 20px; line-height:22px">
+        The method used by <span style="font-family: monserrmedium;opacity: 0;">Careertestpro</span> is based on a combination of a
         <span style="font-weight: bold;">main personality type</span> and <span style="font-weight: bold;">two
             personality subtypes</span>, that also apply to you. The main personality type and the two subtypes are
         displayed in a <span style="font-weight: bold;">three-letter code</span>. This could for instance be

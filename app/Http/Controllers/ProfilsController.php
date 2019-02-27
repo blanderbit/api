@@ -154,18 +154,24 @@ class ProfilsController extends Controller
               '/home/cubex/all_project/api/storage/fonts',
             ]),
             'fontdata' => $fontData + [
-                    'taprom' => [
-                        'R' => 'Taprom.ttf',
-                    ],
                     'montserrat' => [
                         'R' => 'Montserrat-Regular.ttf',
+                    ],
+                    'monserrmedium' => [
+//                        'B' => 'Montserrat-Bold.ttf',
+//                        'EB' => 'Montserrat-ExtraBold.ttf',
+                        'R' => 'Montserrat-Medium.ttf',
+//                        'SB' => 'Montserrat-SemiBold.ttf',
+//                        'useOTL' => 0xFF,
+//                        'useKashida' => 75,
                     ]
                 ],
             'default_font' => 'montserrat'
         ]
 
         );
-//        $mpdf
+        $mpdf->SetFont('montserrat');
+        $mpdf->SetFont('monserrmedium');
 
         function get_image($name){
             $im = file_get_contents($name.'.png');
