@@ -15,50 +15,50 @@
         </div>
     </header>
 
-    <p style="margin: 20px 0">
+    <p style="margin: 20px 0; line-height: 22px;">
         In the score graph above you can see a pattern. There are several possible conclusions to be drawn based on this
         pattern graph.
     </p>
 
-    <p style="margin: 20px 0">
+    <p style="margin: 20px 0; line-height: 22px;">
         If the graph shows no strong peaks or low points, but is somewhat flatter in shape, it could mean that you may
         have no strong interests or skills in a particular area in the RIASEC personality type inventory.
     </p>
 
-    <p style="margin: 20px 0">
+    <p style="margin: 20px 0; line-height: 22px;">
         If you have a very flat profile this could be due to several causes. A flat profile sometimes occurs if someone
         answers the questionnaire’s questions too quickly without really wondering where their abilities, skills and
         interest lie or what things are really important for them in a professional environment.
     </p>
 
-    <p style="margin: 20px 0">
+    <p style="margin: 20px 0; line-height: 22px;">
         What also may underlie a flat profile is the fact that young and/or inexperienced people have not yet fully
         developed their personalities. So if the trend line shows a low score, this may indicate that there is not yet a
         fully developed view of their own identity. However, this does not have to be the case necessarily.
     </p>
 
-    <p style="margin: 20px 0">
+    <p style="margin: 20px 0; line-height: 22px;">
         A flat profile could also indicate that you have a stable personality, showing different skills and interests.
         This is especially the case if there is a high, flattened line shown in the total score graph.
     </p>
 
-    <p style="margin: 20px 0">
+    <p style="margin: 20px 0; line-height: 22px;">
         Should all above not apply to you and your graph shows clear peaks in the trend line, this indicates a clear
         focus on your interests and skills. It is also possible that you will see several peaks in the graph, this
         indicates that your interests lie in multiple personality types. Based on your scores shown in the graph, your
         personal three-letter code is:
     </p>
 
-    <p style="margin: 20px 0">
+    <p style="margin: 20px 0; line-height: 22px;">
         Three-letter code is based on the three personality types that are most applicable to you. It could occur that
         you have just as high a score on 2 of 3, or 3 of 3 letters. When this is the case, the order of the letters in
         the three-letter code does not matter and therefore it can be concluded that each sequence of the three-letter
         code applies to you in the same amount.
     </p>
 
-    <p style="margin: 20px 0">
+    <p style="margin: 20px 0; line-height: 22px;">
         On the next pages the personality types of your three-letter code are described in more detail.
     </p>
 
-    <p style="margin-top: 460px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>
+    <p style="margin-top: 300px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>
 </div>

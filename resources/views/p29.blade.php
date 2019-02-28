@@ -19,7 +19,7 @@
         <div style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid #85B1F5; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left;">
             <table>
                 <tr>
-                    <td style="width: 35px; height: 35px; text-align: center; font-weight: bold;">S</td>
+                    <td style="width: 35px; height: 35px; text-align: center; font-family: montsersemibold;">S</td>
                 </tr>
             </table>
         </div>
@@ -27,7 +27,7 @@
         <div style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid #FDC572; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left;">
             <table>
                 <tr>
-                    <td style="width: 35px; height: 35px; text-align: center; font-weight: bold;">E</td>
+                    <td style="width: 35px; height: 35px; text-align: center; font-family: montsersemibold;">E</td>
                 </tr>
             </table>
         </div>
@@ -35,7 +35,7 @@
         <div style="width: 35px; height: 35px; border-radius: 50%; border: 2px solid #F9892E; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left;">
             <table>
                 <tr>
-                    <td style="width: 35px; height: 35px; text-align: center; font-weight: bold;">C</td>
+                    <td style="width: 35px; height: 35px; text-align: center; font-family: montsersemibold;">C</td>
                 </tr>
             </table>
         </div>

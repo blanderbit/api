@@ -16,18 +16,18 @@
     </header>
 
     <div>
-        <div style="width: 30px; height: 30px; border: 2px solid #FDC572; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left">
+        <div style="width: 30px; height: 30px; border: 2px solid #FDC572; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left; font-family: sans;">
             <table>
                 <tr>
-                    <td style="width: 30px; height: 30px; text-align: center; font-weight: bold;">E</td>
+                    <td style="width: 30px; height: 30px; text-align: center; font-family: montsersemibold;">E</td>
                 </tr>
             </table>
         </div>
 
-        <table><tr><td style="font-weight: bold; height: 30px; width: 300px; padding-left: 15px;">Enterprising Personality Type</td></tr></table>
+        <table><tr><td style="font-family: montsersemibold; height: 30px; width: 300px; padding-left: 15px;">Enterprising Personality Type</td></tr></table>
     </div>
 
-    <p style="margin: 15px 0">
+    <p style="margin: 15px 0; line-height: 20px;">
         You score very high on the enterprising personality type. You like to take initiative and you're ambitious. You
         enjoy social gatherings and associate with other enterprising and influential people. Achieving your goals is
         important to you and you try to motivate others to achieve your goals together with you. You like to feel in
@@ -35,18 +35,18 @@
     </p>
 
     <div>
-        <div style="width: 30px; height: 30px; border: 2px solid #F9892E; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left">
+        <div style="width: 30px; height: 30px; border: 2px solid #F9892E; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left; font-family: sans;">
             <table>
                 <tr>
-                    <td style="width: 30px; height: 30px; text-align: center; font-weight: bold;">C</td>
+                    <td style="width: 30px; height: 30px; text-align: center; font-family: montsersemibold;">C</td>
                 </tr>
             </table>
         </div>
 
-        <table><tr><td style="font-weight: bold; height: 30px; width: 300px; padding-left: 15px;">Conventional Personality Type</td></tr></table>
+        <table><tr><td style="font-family: montsersemibold; height: 30px; width: 300px; padding-left: 15px;">Conventional Personality Type</td></tr></table>
     </div>
 
-    <p style="margin: 15px 0">
+    <p style="margin: 15px 0; line-height: 20px;">
         You score above average on the investigative personality type. For you it's probably important to be active in a
         work environment where solving complex matters plays a big role. You're good at using your knowledge and
         experience and find it important to keep improving yourself. A work environment in which you can use your
@@ -54,18 +54,18 @@
     </p>
 
     <div>
-        <div style="width: 30px; height: 30px; border: 2px solid #4876D0; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left">
+        <div style="width: 30px; height: 30px; border: 2px solid #4876D0; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left; font-family: sans;">
             <table>
                 <tr>
-                    <td style="width: 30px; height: 30px; text-align: center; font-weight: bold;">I</td>
+                    <td style="width: 30px; height: 30px; text-align: center; font-family: montsersemibold;">I</td>
                 </tr>
             </table>
         </div>
 
-        <table><tr><td style="font-weight: bold; height: 30px; width: 300px; padding-left: 15px;">Investigative Personality Type</td></tr></table>
+        <table><tr><td style="font-family: montsersemibold; height: 30px; width: 300px; padding-left: 15px;">Investigative Personality Type</td></tr></table>
     </div>
 
-    <p style="margin: 15px 0">
+    <p style="margin: 15px 0; line-height: 20px;">
         You score high on the conventional personality type. You tend to be conservative and traditional in values and
         attitudes. You're well-organized, persistent, and practical in your approach to life. Professional work
         environments in which you know what is expected from you suit you best and even though you are status conscious
@@ -74,36 +74,36 @@
     </p>
 
     <div>
-        <div style="width: 30px; height: 30px; border: 2px solid #77DCC1; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left">
+        <div style="width: 30px; height: 30px; border: 2px solid #77DCC1; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left; font-family: sans;">
             <table>
                 <tr>
-                    <td style="width: 30px; height: 30px; text-align: center; font-weight: bold;">A</td>
+                    <td style="width: 30px; height: 30px; text-align: center; font-family: montsersemibold;">A</td>
                 </tr>
             </table>
         </div>
 
-        <table><tr><td style="font-weight: bold; height: 30px; width: 300px; padding-left: 15px;">Artistic Personality Type</td></tr></table>
+        <table><tr><td style="font-family: montsersemibold; height: 30px; width: 300px; padding-left: 15px;">Artistic Personality Type</td></tr></table>
     </div>
 
-    <p style="margin: 15px 0">
+    <p style="margin: 15px 0; line-height: 20px;">
         You score average on the investigative personality type. Scientific and natural phenomena interest you to a
         certain extent, depending on the topic. However, it does not always excite you and therefore you would also be
         perfectly fine in a workplace where these aspects are not present.
     </p>
 
     <div>
-        <div style="width: 30px; height: 30px; border: 2px solid #85B1F5; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left">
+        <div style="width: 30px; height: 30px; border: 2px solid #85B1F5; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left; font-family: sans;">
             <table>
                 <tr>
-                    <td style="width: 30px; height: 30px; text-align: center; font-weight: bold;">S</td>
+                    <td style="width: 30px; height: 30px; text-align: center; font-family: montsersemibold;">S</td>
                 </tr>
             </table>
         </div>
 
-        <table><tr><td style="font-weight: bold; height: 30px; width: 300px; padding-left: 15px;">Social Personality Type</td></tr></table>
+        <table><tr><td style="font-family: montsersemibold; height: 30px; width: 300px; padding-left: 15px;">Social Personality Type</td></tr></table>
     </div>
 
-    <p style="margin: 15px 0">
+    <p style="margin: 15px 0; line-height: 20px;">
         You score below average on the social personality type. A social or service-related work environment in which
         interpersonal relations play a big role does not really interest you. Therefore, a professional work environment
         where collaboration and social, helpful behavior is crucial, is not something you are looking for. However, this
@@ -112,23 +112,23 @@
     </p>
 
     <div>
-        <div style="width: 30px; height: 30px; border: 2px solid #F59A9A; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left">
+        <div style="width: 30px; height: 30px; border: 2px solid #F59A9A; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%; float: left; font-family: sans;; font-family: sans;">
             <table>
                 <tr>
-                    <td style="width: 30px; height: 30px; text-align: center; font-weight: bold;">R</td>
+                    <td style="width: 30px; height: 30px; text-align: center; font-family: montsersemibold;">R</td>
                 </tr>
             </table>
         </div>
 
-        <table><tr><td style="font-weight: bold; height: 30px; width: 300px; padding-left: 15px;">Realistic Personality Type</td></tr></table>
+        <table><tr><td style="font-family: montsersemibold; height: 30px; width: 300px; padding-left: 15px;">Realistic Personality Type</td></tr></table>
     </div>
 
-    <p style="margin: 15px 0">
+    <p style="margin: 15px 0; line-height: 20px;">
         You score very low on the realistic personality type. Working outside or physical activities do not suit you.
         However, this does not mean that you are not handy or that you are not an outdoors person. You prefer not to
         work with machines, materials or perform physical activities in a professional work environment. Your interests
         and skills do not match occupations where these activities and skills play a big role.
     </p>
 
-    <p style="margin-top: 150px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>
+    <p style="margin-top: 50px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>
 </div>

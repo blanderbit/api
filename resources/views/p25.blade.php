@@ -16,68 +16,68 @@
     </header>
 
     <div style="margin-top: 24px;">
-        <div style="font-size: 12px; font-weight: bold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
+        <div style="font-size: 12px; font-family: montsersemibold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
             <div style="float: left; width: 95%;">13. Three-Letter Code Occupations</div>
         </div>
     </div>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         The occupation list on the next page is based on your personal three-letter code that’s reflects the results of
         the career test you have made on Careertestpro.com. This code will help you to find occupations that match the
         composition of your personality as detailed as possible.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         The database of Careertestpro.com consists of more than 3,000 occupations. All these occupations are classified
         according to their corresponding three-letter code.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         On the next page of this report you will find occupations that are aligned with your personal three-letter code,
         that was extracted from the questionnaire you filled in.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         The first three-letter code that you will see on the list of occupations is the one that exactly fitted your
         personality. Subsequently other occupations are listed who have the same three letters in their code, but in a
         different order. These occupations are important because it may well be the case that these have similarities
         with your exact three-letter code and thus might appeal to you.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         It’s up to you to get inspiration, ideas and motivation from the occupations list below and to examine the ones
         that appeal to you the most.
 
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         Next to the occupations you will find an educational level that indicates on how much education people need to do the work, how much related experience people need to do the work and how much on-the-job training people need to do the work.
 
     </p>
 
-    <p style="margin-top: 30px; font-weight: bold;">
+    <p style="margin-top: 30px; font-family: montsersemibold;">
         Level
     </p>
 
     <p style="margin-top: 30px;">
-        <span style="font-weight: bold;">1</span> Occupations that need little or no preparation;
+        <span style="font-family: montsersemibold;">1</span> Occupations that need little or no preparation;
     </p>
 
     <p style="margin-top: 30px;">
-        <span style="font-weight: bold;">2</span> Occupations that need some preparation;
+        <span style="font-family: montsersemibold;">2</span> Occupations that need some preparation;
     </p>
 
     <p style="margin-top: 30px;">
-        <span style="font-weight: bold;">3</span> Occupations the need medium preparation;
+        <span style="font-family: montsersemibold;">3</span> Occupations the need medium preparation;
     </p>
 
     <p style="margin-top: 30px;">
-        <span style="font-weight: bold;">4</span> Occupations that need considerable preparation;
+        <span style="font-family: montsersemibold;">4</span> Occupations that need considerable preparation;
     </p>
 
     <p style="margin-top: 30px;">
-        <span style="font-weight: bold;">5</span> Occupations Occupations that need extensive preparation.
+        <span style="font-family: montsersemibold;">5</span> Occupations Occupations that need extensive preparation.
     </p>
 
-    <p style="margin-top: 234px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>
+    <p style="margin-top: 120px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>
 </div>

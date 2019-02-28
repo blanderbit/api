@@ -3,6 +3,7 @@
         font-size: 12px;
         margin-bottom: 24px;
         font-weight: 500;
+        font-family: monserrmedium;
         color: #000000
     }
 </style>
@@ -26,7 +27,7 @@
     <div>
         <h2 style="font-size: 12px; text-align: center">CONTENT</h2>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 1. Participant information
             </div>
@@ -36,7 +37,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 2. Introduction
             </div>
@@ -46,7 +47,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 3. Skills
             </div>
@@ -56,7 +57,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 4. Work values
             </div>
@@ -66,7 +67,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 5. Activities
             </div>
@@ -76,7 +77,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 6. Personal behavior
             </div>
@@ -86,7 +87,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 7. Occupations / Professions
             </div>
@@ -96,7 +97,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 8. Total Score
             </div>
@@ -106,7 +107,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 9. Enterpricing Personality Type
             </div>
@@ -116,7 +117,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 10. Conventional Personality Type
             </div>
@@ -126,7 +127,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 11. Social Personality Type
             </div>
@@ -136,7 +137,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 12. Occupation List Highest Scored Personality Type
             </div>
@@ -146,7 +147,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 13. Three-Letter Code Occupations
             </div>
@@ -156,7 +157,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 14. Conclusion
             </div>
@@ -166,7 +167,7 @@
             </div>
         </div>
 
-        <div class="list">
+        <div class="list" style="line-height: 22px;">
             <div style="width: 49.9%; float: left">
                 15. What's next?
             </div>
@@ -177,5 +178,5 @@
         </div>
     </div>
 
-    <p style="margin-top: 270px;">Carteertestpro.com is a product of Making B.V. - Copyright Making Moves B.V.</p>
+    <p style="margin-top: 170px;">Carteertestpro.com is a product of Making B.V. - Copyright Making Moves B.V.</p>
 </div>

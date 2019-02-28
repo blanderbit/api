@@ -17,7 +17,7 @@
 
 
     <div style="margin-top: 34px;">
-        <div style="font-size: 12px; font-weight: bold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
+        <div style="font-size: 12px; font-family: montsersemibold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
             4. Work values
         </div>
     </div>
@@ -51,7 +51,7 @@ opacity: 0.9;
 z-index: 1000;
 margin-top: -48px;
 ">
-            Below you will find a description of the six personality types, which are also ranked arranged lowest to highest, based on your personal score. Also, every score comes with a brief description based on how much the discussed personality type applies to you:
+            Below you will find a description of the <span style="font-family: monserrmedium;">six personality types,</span> which are also ranked arranged lowest to highest, based on your personal score. Also, every score comes with a brief description based on how much the discussed personality type applies to you:
         </p>
     </div>
     <p style="margin-top: 260px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>

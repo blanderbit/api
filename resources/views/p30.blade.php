@@ -16,25 +16,25 @@
     </header>
 
     <div style="margin-top: 24px;">
-        <div style="font-size: 12px; font-weight: bold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
-            <div style="float: left; width: 95%;">14. Conclusion</div>
+        <div style="font-size: 12px; font-family: montsersemibold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
+            <div style="float: left; width: 95%; ">14. Conclusion</div>
         </div>
     </div>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         Based on the six different personality types, this report has given you insight into your personality profile.
         To each personality profile certain occupations and activities fit to a greater or lesser extent. This is why
         career tests in general are not actually tests that give a specific answer to the question: what should I be?
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         Instead the career test and the resulting personality profile provide a substantiation why certain occupations
         suit you better than others. These test results can help you make better decisions with regard to your (future)
         career. The occupations on the specific occupation list based on your personality profile are examples of
         stereotypical occupations associated with the different personality types.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         However, the reality is that in practice, the boundaries between different personality types and three-letter
         codes are blurred and many occupations actually fit multiple personality types. For example, a surgeon must be
         able to communicate with people (social personality type), he/she must have an academic background
@@ -43,7 +43,7 @@
         one occupation.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         It is important for you to determine for yourself which of your characteristics, qualities and skills connect to
         the work areas that you want to be active in. If you are for instance a person who likes to work outside you
         should not look for work environments in which you work behind a desk all day on a computer. If you are an
@@ -51,29 +51,29 @@
         creativity are encouraged and are appreciated.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         Furthermore, it can be done in different ways and does not necessarily have to be in an obvious work environment
         for a creative person like occupations as a writer or actor. Coming up with a new advertising campaign or a new
         product also requires a lot of creative insight and imagination.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         What you should also keep in consideration is the fact that a lot of people do not find all the characteristics,
         qualities and competencies that they find important in their work environment. For you it is important that you
         know who you are and know what you like.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         Also, you need to figure out where your personal skills, qualities and competencies come into their own. By
         doing so you can reflect on you work and make the adjustments in your career that you think you should make.
         This will help you to identify the tasks in your work that fit your personality best and also identify the ones
         which do not.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         Provided that the work environment allows these kind of adjustments, you can create a professional work
         environment in which your core competences and skills come into their own within your occupational activities.
     </p>
 
-    <p style="margin-top: 290px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>
+    <p style="margin-top: 50px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>
 </div>

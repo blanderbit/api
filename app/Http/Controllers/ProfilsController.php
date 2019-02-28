@@ -151,20 +151,33 @@ class ProfilsController extends Controller
 
             [
             'fontDir' => array_merge($fontDirs, [
-              '/home/cubex/all_project/api/storage/fonts',
+              '/home/pavel/Рабочий стол/rr/api/storage/fonts',
             ]),
             'fontdata' => $fontData + [
+                    //400
                     'montserrat' => [
                         'R' => 'Montserrat-Regular.ttf',
                     ],
+
+                    //500
                     'monserrmedium' => [
-//                        'B' => 'Montserrat-Bold.ttf',
-//                        'EB' => 'Montserrat-ExtraBold.ttf',
                         'R' => 'Montserrat-Medium.ttf',
-//                        'SB' => 'Montserrat-SemiBold.ttf',
-//                        'useOTL' => 0xFF,
-//                        'useKashida' => 75,
-                    ]
+                    ],
+
+                   //600
+                    'montsersemibold' => [
+                        'R' => 'Montserrat-SemiBold.ttf',
+                    ],
+
+                    // 700
+                    'montserbold' => [
+                        'R' => 'Montserrat-Bold.ttf',
+                    ],
+
+                    // 800
+                    'montserextrabold' => [
+                        'R' => 'Montserrat-ExtraBold.ttf',
+                    ],
                 ],
             'default_font' => 'montserrat'
         ]
@@ -172,6 +185,9 @@ class ProfilsController extends Controller
         );
         $mpdf->SetFont('montserrat');
         $mpdf->SetFont('monserrmedium');
+        $mpdf->SetFont('montserbold');
+        $mpdf->SetFont('montserextrabold');
+        $mpdf->SetFont('montsersemibold');
 
         function get_image($name){
             $im = file_get_contents($name.'.png');

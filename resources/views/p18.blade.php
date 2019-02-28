@@ -15,26 +15,26 @@
         </div>
     </header>
 
-    <p style="margin-top: 20px; font-weight: bold;">
+    <p style="margin-top: 20px; line-height: 22px; font-family: montsersemibold;">
         Work Environment
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         People who score high on the enterprising personality type often find their happiness in professions in which they
         can use their commercial, political or leadership skills to cooperate with others or to organize activities.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         They
         are enthusiastic and energetic in initiating and supervising the activities in which they engage. Furthermore,
         they are assertive and verbally persuasive in bringing others around to their point of view.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         The enterprising personality type is ambitious and likes to be in positions of authority.
     </p>
 
-    <p style="margin-top: 20px; font-weight: bold;">
+    <p style="margin-top: 20px; line-height: 22px; font-family: montsersemibold;">
         Characteristic Traits
     </p>
 
@@ -129,7 +129,7 @@
         code are explained and written out.
     </p>
 
-    <p style="margin-top: 430px;">
+    <p style="margin-top: 370px;">
         Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.
     </p>
 </div>

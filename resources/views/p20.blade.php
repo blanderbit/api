@@ -15,7 +15,7 @@
         </div>
     </header>
 
-    <p style="margin-top: 20px; font-weight: bold;">
+    <p style="margin-top: 20px; line-height: 22px; font-family: montsersemibold;">
         Work Environment
     </p>
 
@@ -36,7 +36,7 @@
         occupations or positions within law enforcement.
     </p>
 
-    <p style="margin-top: 20px; font-weight: bold;">
+    <p style="margin-top: 20px; line-height: 22px; font-family: montsersemibold;">
         Characteristic Traits
     </p>
 
@@ -131,7 +131,7 @@
         code are explained and written out.
     </p>
 
-    <p style="margin-top: 380px;">
+    <p style="margin-top: 350px;">
         Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.
     </p>
 </div>

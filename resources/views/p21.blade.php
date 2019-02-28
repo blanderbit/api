@@ -16,14 +16,14 @@
     </header>
 
     <div style="margin-top: 24px;">
-        <div style="font-size: 12px; font-weight: bold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
+        <div style="font-size: 12px; font-family: montsersemibold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
             <div style="float: left; width: 95%;">11. Social Personality Type</div>
 
             <div style="text-align: right; float: right">
                 <div style="width: 30px; height: 30px; border: 2px solid #85B1F5; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%;">
                     <table>
                         <tr>
-                            <td style="width: 30px; height: 30px; text-align: center; font-weight: bold;">S</td>
+                            <td style="width: 30px; height: 30px; text-align: center; font-family: montsersemibold;">S</td>
                         </tr>
                     </table>
                 </div>
@@ -31,26 +31,26 @@
         </div>
     </div>
 
-    <p style="font-weight: bold; margin: 20px 0;">
+    <p style="font-family: montsersemibold; margin: 20px 0;">
         General Information
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px; ">
         The social personality type likes activities where they can be helpful to others by serving in facilitative or
         supervising roles. They often possess interpersonal skills such as patience and well developed expression
         skills.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px; ">
         In addition, they are persuasive and enjoy being at or near the center of the group.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px; ">
         Social personalities are idealistic, sensitive, and conscientious in their outlook on things like life, morality
         and religion.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px; ">
         They have strong social feelings and are open to emotions, thoughts and feelings of others.
     </p>
 
@@ -59,7 +59,7 @@
             <table>
                 <tr>
                     <td style="width: 140px; height: 140px; text-align: center; font-size: 12px;">
-                        <span style="font-weight: bold;">Are You?</span>
+                        <span style="font-family: montsersemibold;">Are You?</span>
 
                         <br>
                         <br>
@@ -76,7 +76,7 @@
             <table style="z-index: 3; position: relative">
                 <tr>
                     <td style="width: 140px; height: 140px; text-align: center; font-size: 12px;">
-                        <span style="font-weight: bold;">Can You?</span>
+                        <span style="font-family: montsersemibold;">Can You?</span>
 
                         <br>
                         <br>
@@ -94,7 +94,7 @@
             <table>
                 <tr>
                     <td style="width: 140px; height: 140px; text-align: center; font-size: 12px;">
-                        <span style="font-weight: bold;">Like To?</span>
+                        <span style="font-family: montsersemibold;">Like To?</span>
 
                         <br>
                         <br>
@@ -112,22 +112,22 @@
         </div>
     </div>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px; ">
         The social personality type is generally not into technical activities and therefore often does not have
         technical skills. Very practical and technical activities are thus often avoided.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px; ">
         They see themselves as having social and educational skills which causes them to get along well with others and
         fit natural to express their emotions.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px; ">
         Social personality occupations can be very different in industry, but traits like ‘social’ and ‘friendly’ are
         common in these occupations.
     </p>
 
-    <p style="margin-top: 20px; font-weight: bold;">
+    <p style="margin-top: 20px; line-height: 22px;  line-height: 22px; font-family: montsersemibold;">
         Examples of typical enterprising personality occupations are:
     </p>
 
@@ -154,7 +154,7 @@
         </div>
     </div>
 
-    <p style="margin-top: 170px">
+    <p style="margin-top: 70px">
         Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.
     </p>
 </div>

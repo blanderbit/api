@@ -19,7 +19,7 @@
         <div style="width: 85%; float: left">
             <table style="width: 100%">
                 <tr>
-                    <td style="height: 60px; font-size: 12px; font-weight: bold;">
+                    <td style="height: 60px; font-size: 12px; font-family: montsersemibold;">
                         List of Occupations:
                     </td>
                 </tr>

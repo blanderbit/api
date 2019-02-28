@@ -23,18 +23,18 @@
         </div>
     </header>
 
-    <h2 style="margin: 0; text-align: center; text-transform: uppercase; font-size: 12px;">careertest
-        <span style="color: #4876D0">report</span>
+    <h2 style="margin: 0; text-align: center; text-transform: uppercase; font-size: 12px; font-family: monserrmedium;">careertest
+        <span style="color: #4876D0; font-family: montserbold;">report</span>
     </h2>
 
     <div style="margin-top: 24px;">
-        <div style="font-size: 12px; font-weight: bold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
+        <div style="font-size: 12px; font-family: montserbold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
             1. Participant information
         </div>
 
         <div style="margin-top: 21px;">
             <div style="width: 44px; height: 44px; border-radius: 50%; background: #F4F8FF; float: left;">
-                <table style="color: #4876D0; font-size: 14px; font-weight: bold; text-align: center;">
+                <table style="color: #4876D0; font-size: 14px; font-family: montsersemibold; text-align: center;">
                     <tr>
                         <td style="width: 44px; height: 44px;">JS</td>
                     </tr>
@@ -44,10 +44,10 @@
             <div style="margin-top: 2px; margin-left: 60px;">
                 <table style="font-size: 12px;">
                     <tr>
-                        <td style="font-weight: bold;">Name</td>
-                        <td style="font-weight: bold; padding-left: 40px;">Age</td>
-                        <td style="font-weight: bold; padding-left: 40px;">Gender</td>
-                        <td style="font-weight: bold; padding-left: 40px;">Test Date</td>
+                        <td style="font-family: montsersemibold;">Name</td>
+                        <td style="font-family: montsersemibold; padding-left: 40px;">Age</td>
+                        <td style="font-family: montsersemibold; padding-left: 40px;">Gender</td>
+                        <td style="font-family: montsersemibold; padding-left: 40px;">Test Date</td>
                     </tr>
 
                     <tr>
@@ -60,7 +60,7 @@
             </div>
         </div>
 
-        <div style="font-size: 13px; color:#333333; font-family: new; font-weight: 600 !important; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px; margin-top: 21px;">
+        <div style="font-size: 13px; color:#333333; font-family: montserbold; font-weight: 600 !important; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px; margin-top: 21px;">
             2. Introduction
         </div>
 
@@ -69,13 +69,13 @@
             profile based on the career test questionnaire you just made on Careertestpro.com.
         </p>
         <p style="margin: 15px 0; line-height: 22px">
-            The career test that you took is based on the <span style="font-weight: bold;">RIASEC Theory of Dr.John
+            The career test that you took is based on the <span style="font-family: monserrmedium;">RIASEC Theory of Dr.John
             Holland</span>. His philosophy is at the root of many other career tests that are used worldwide. This
-            theory is also the most influential in its field on which more than <span style="font-weight: bold;">500
+            theory is also the most influential in its field on which more than <span style="font-family: monserrmedium;">500
             scientific studies are based.</span>
         </p>
         <p style="margin: 15px 0; line-height: 22px">
-            The <span style="font-weight: bold;">RIASEC theory</span> is based on <span style="font-weight: bold;">
+            The <span style="font-family: monserrmedium">RIASEC theory</span> is based on <span style="font-family: monserrmedium;">
             6 different personality characteristics</span>, being:
         </p>
 
@@ -83,7 +83,7 @@
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #F59A9A; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
                 <table>
                     <tr>
-                        <td style="width: 30px; height: 30px; text-align: center">R</td>
+                        <td style=" font-family: montsersemibold; width: 30px; height: 30px; text-align: center">R</td>
                     </tr>
                 </table>
             </div>
@@ -91,7 +91,7 @@
             <table style="margin-left: 15px; width: 70%">
                 <tr>
                     <td style="height: 30px">
-                        Realistic personality type - <span style="font-weight: bold;">Doers</span>;
+                        Realistic personality type - <span style="font-family: monserrmedium;">Doers</span>;
                     </td>
                 </tr>
             </table>
@@ -99,13 +99,13 @@
 
         <div style="margin-top: 10px; font-family: sans;">
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #4876D0; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
-                <table><tr><td style="width: 30px; height: 30px; text-align: center">I</td></tr></table>
+                <table><tr><td style="font-family: montsersemibold; width: 30px; height: 30px; text-align: center">I</td></tr></table>
             </div>
 
             <table style="margin-left: 15px; width: 70%">
                 <tr>
                     <td style="height: 30px">Investigative personality type -
-                        <span style="font-weight: bold;">Thinkers</span>;
+                        <span style="font-family: monserrmedium;">Thinkers</span>;
                     </td>
                 </tr>
             </table>
@@ -115,22 +115,22 @@
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #77DCC1; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
                 <table>
                     <tr>
-                        <td style="width: 30px; height: 30px; text-align: center">R</td>
+                        <td style="font-family: montsersemibold; width: 30px; height: 30px; text-align: center">A</td>
                     </tr>
                 </table>
             </div>
 
-            <table style="margin-left: 15px; width: 70%"><tr><td style="height: 30px">Artistic personality type - <span style="font-weight: bold;">Creators</span>;</td></tr></table>
+            <table style="margin-left: 15px; width: 70%"><tr><td style="height: 30px">Artistic personality type - <span style="font-family: monserrmedium;">Creators</span>;</td></tr></table>
         </div>
 
         <div style="margin-top: 10px; font-family: sans;">
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #85B1F5; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
-                <table><tr><td style="width: 30px; height: 30px; text-align: center">S</td></tr></table>
+                <table><tr><td style="font-family: montsersemibold; width: 30px; height: 30px; text-align: center">S</td></tr></table>
             </div>
 
             <table style="margin-left: 15px; width: 70%">
                 <tr>
-                    <td style="height: 30px">Social personality type - <span style="font-weight: bold;">Helpers</span>;
+                    <td style="height: 30px">Social personality type - <span style="font-family: monserrmedium;">Helpers</span>;
                     </td>
                 </tr>
             </table>
@@ -138,13 +138,13 @@
 
         <div style="margin-top: 10px; font-family: sans;">
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #FDC572; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
-                <table><tr><td style="width: 30px; height: 30px; text-align: center">E</td></tr></table>
+                <table><tr><td style="font-family: montsersemibold; width: 30px; height: 30px; text-align: center">E</td></tr></table>
             </div>
 
             <table style="margin-left: 15px; width: 70%">
                 <tr>
                     <td style="height: 30px">Enterpricing personality type -
-                        <span style="font-weight: bold;">Persuaders</span>;
+                        <span style="font-family: monserrmedium;">Persuaders</span>;
                     </td>
                 </tr>
             </table>
@@ -152,13 +152,13 @@
 
         <div style="margin-top: 10px; font-family: sans;">
             <div style="width: 30px; height: 30px; border-radius: 50%; border: 2px solid #F9892E; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); float: left">
-                <table><tr><td style="width: 30px; height: 30px; text-align: center">C</td></tr></table>
+                <table><tr><td style="font-family: montsersemibold; width: 30px; height: 30px; text-align: center">C</td></tr></table>
             </div>
 
             <table style="margin-left: 15px; width: 70%">
                 <tr>
                     <td style="height: 30px">Conventional personality type -
-                        <span style="font-weight: bold;">Organizers</span>.
+                        <span style="font-family: monserrmedium;">Organizers</span>.
                     </td>
                 </tr>
             </table>
@@ -173,16 +173,16 @@
 
     <p style="margin-top: 20px; line-height:22px">
         The method used by <span style="font-family: monserrmedium;opacity: 0;">Careertestpro</span> is based on a combination of a
-        <span style="font-weight: bold;">main personality type</span> and <span style="font-weight: bold;">two
+        <span style="font-family: monserrmedium;">main personality type</span> and <span style="font-family: monserrmedium;">two
             personality subtypes</span>, that also apply to you. The main personality type and the two subtypes are
-        displayed in a <span style="font-weight: bold;">three-letter code</span>. This could for instance be
-        <span style="font-weight: bold;">RAE</span> as a three-lettercode, meaning a
-        <span style="font-weight: bold;">Realistic</span> main personality type with subtypes
-        <span style="font-weight: bold;">Artistic</span> and <span style="font-weight: bold;">Enterprising</span>.
+        displayed in a <span style="font-family: monserrmedium;">three-letter code</span>. This could for instance be
+        <span style="font-family: monserrmedium;">RAE</span> as a three-lettercode, meaning a
+        <span style="font-family: monserrmedium;">Realistic</span> main personality type with subtypes
+        <span style="font-family: monserrmedium;">Artistic</span> and <span style="font-family: monserrmedium;  ">Enterprising</span>.
         These 6 personality characteristics will be discussed in depth later on in this report, so you get to know in
         detail what they stand for. It is often the case that there are multiple personality types that fit one person.
         Everyone has something of all of these characteristic features in their personality.
     </p>
 
-    <p style="margin-top: 150px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>
+    <p style="margin-top: 65px;">Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.</p>
 </div>

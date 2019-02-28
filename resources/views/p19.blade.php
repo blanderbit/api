@@ -16,14 +16,14 @@
     </header>
 
     <div style="margin-top: 24px;">
-        <div style="font-size: 12px; font-weight: bold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
+        <div style="font-size: 12px; font-family: montsersemibold; border-bottom: 1px solid #DFDFDF; padding-bottom: 5px;">
             <div style="float: left; width: 95%;">10. Conventional Personality Type</div>
 
             <div style="text-align: right; float: right">
                 <div style="width: 30px; height: 30px; border: 2px solid #F9892E; box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.7); border-radius: 50%;">
                     <table>
                         <tr>
-                            <td style="width: 30px; height: 30px; text-align: center; font-weight: bold;">C</td>
+                            <td style="width: 30px; height: 30px; text-align: center; font-family: montsersemibold;">C</td>
                         </tr>
                     </table>
                 </div>
@@ -31,26 +31,26 @@
         </div>
     </div>
 
-    <p style="font-weight: bold; margin: 20px 0;">
+    <p style="font-family: montsersemibold; margin: 20px 0;">
         General Information
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         The conventional personality type likes activities where they can work according to set procedures. They are
         wellorganized, persistent, and practical individuals.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         People who score high on the conventional personality type often possess administrative, organizational and
         analytical skills. In addition, they are good at working according to procedures, rules and guidelines.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         The conventional personality type is dependable, efficient and conscientious in accomplishing the tasks in which
         they engage.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         They enjoy the security of belonging to groups and organizations and make good team members.
     </p>
 
@@ -59,7 +59,7 @@
             <table>
                 <tr>
                     <td style="width: 140px; height: 140px; text-align: center; font-size: 12px;">
-                        <span style="font-weight: bold;">Are You?</span>
+                        <span style="font-family: montsersemibold;">Are You?</span>
 
                         <br>
                         <br>
@@ -76,7 +76,7 @@
             <table style="z-index: 3; position: relative">
                 <tr>
                     <td style="width: 140px; height: 140px; text-align: center; font-size: 12px;">
-                        <span style="font-weight: bold;">Can You?</span>
+                        <span style="font-family: montsersemibold;">Can You?</span>
 
                         <br>
                         <br>
@@ -93,7 +93,7 @@
             <table>
                 <tr>
                     <td style="width: 140px; height: 140px; text-align: center; font-size: 12px;">
-                        <span style="font-weight: bold;">Like To?</span>
+                        <span style="font-family: montsersemibold;">Like To?</span>
 
                         <br>
                         <br>
@@ -111,16 +111,16 @@
         </div>
     </div>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         The conventional personality type is generally less skilled in artistic and creative fields and other activities
         that require a lot of imagination.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         They are most comfortable working in situations and at tasks in which they know what is expected of them.
     </p>
 
-    <p style="margin-top: 20px; font-weight: bold;">
+    <p style="margin-top: 20px; line-height: 22px; font-family: montsersemibold;">
         Examples of typical enterprising personality occupations are:
     </p>
 
@@ -148,7 +148,7 @@
         </div>
     </div>
 
-    <p style="margin-top: 200px">
+    <p style="margin-top: 140px">
         Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.
     </p>
 </div>

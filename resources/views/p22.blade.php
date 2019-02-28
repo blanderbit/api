@@ -6,7 +6,7 @@
             </div>
         </div>
 
-        <div style="width: 49.9%; text-align: right; font-size: 12px;">
+        <div style="width: 49.9%; text-align: right; font-size: 12px; font-family: monserrmedium;">
             <div class="author-box">
                 <span class="author">John Smith</span>
                 <br>
@@ -15,26 +15,26 @@
         </div>
     </header>
 
-    <p style="margin-top: 20px; font-weight: bold;">
+    <p style="margin-top: 20px; line-height: 22px; font-family: montsersemibold;">
         Work Environment
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px; ">
         People who score high on the social personality type often find their happiness in professions where helping
         others, cooperating and/or supervising are common.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px; ">
         These people can be found in environments where they can take care of, support, help, educate, inform or
         entertain others.
     </p>
 
-    <p style="margin-top: 20px;">
+    <p style="margin-top: 20px; line-height: 22px;">
         The social working environment requires interpersonal and communicative skills and provides room for
         humanitarian values, understanding of others and patient and tactful approaches.
     </p>
 
-    <p style="margin-top: 20px; font-weight: bold;">
+    <p style="margin-top: 20px; line-height: 22px; font-family: montsersemibold;">
         Characteristic Traits
     </p>
 
@@ -43,7 +43,7 @@
             <div style="width: 80px; height: 80px; border: 1px solid #85B1F5; border-radius: 50%; float: left;">
                 <table>
                     <tr>
-                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px;">Friendly</td>
+                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px; font-family: monserrmedium;">Friendly</td>
                     </tr>
                 </table>
             </div>
@@ -51,7 +51,7 @@
             <div style="width: 80px; height: 80px; border: 1px solid #85B1F5; border-radius: 50%; float: left; margin-left: 10px;">
                 <table>
                     <tr>
-                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px;">Idealistic</td>
+                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px; font-family: monserrmedium;">Idealistic</td>
                     </tr>
                 </table>
             </div>
@@ -59,7 +59,7 @@
             <div style="width: 80px; height: 80px; border: 1px solid #85B1F5; border-radius: 50%; float: left; margin-left: 10px;">
                 <table>
                     <tr>
-                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px;">Patient</td>
+                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px; font-family: monserrmedium;">Patient</td>
                     </tr>
                 </table>
             </div>
@@ -67,7 +67,7 @@
             <div style="width: 80px; height: 80px; border: 1px solid #85B1F5; border-radius: 50%; float: left; margin-left: 10px;">
                 <table>
                     <tr>
-                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px;">Responsible</td>
+                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px; font-family: monserrmedium;">Responsible</td>
                     </tr>
                 </table>
             </div>
@@ -75,7 +75,7 @@
             <div style="width: 80px; height: 80px; border: 1px solid #85B1F5; border-radius: 50%; float: left; margin-left: 10px;">
                 <table>
                     <tr>
-                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px;">Forgiving</td>
+                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px; font-family: monserrmedium;">Forgiving</td>
                     </tr>
                 </table>
             </div>
@@ -85,7 +85,7 @@
             <div style="width: 80px; height: 80px; border: 1px solid #85B1F5; border-radius: 50%; float: left;">
                 <table>
                     <tr>
-                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px;">Cooperative</td>
+                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px; font-family: monserrmedium;">Cooperative</td>
                     </tr>
                 </table>
             </div>
@@ -93,7 +93,7 @@
             <div style="width: 80px; height: 80px; border: 1px solid #85B1F5; border-radius: 50%; float: left; margin-left: 10px;">
                 <table>
                     <tr>
-                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px;">Kind</td>
+                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px; font-family: monserrmedium;">Kind</td>
                     </tr>
                 </table>
             </div>
@@ -101,7 +101,7 @@
             <div style="width: 80px; height: 80px; border: 1px solid #85B1F5; border-radius: 50%; float: left; margin-left: 10px;">
                 <table>
                     <tr>
-                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px;">Compassionate</td>
+                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px; font-family: monserrmedium;">Compassionate</td>
                     </tr>
                 </table>
             </div>
@@ -109,7 +109,7 @@
             <div style="width: 80px; height: 80px; border: 1px solid #85B1F5; border-radius: 50%; float: left; margin-left: 10px;">
                 <table>
                     <tr>
-                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px;">Generous</td>
+                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px; font-family: monserrmedium;">Generous</td>
                     </tr>
                 </table>
             </div>
@@ -117,7 +117,7 @@
             <div style="width: 80px; height: 80px; border: 1px solid #85B1F5; border-radius: 50%; float: left; margin-left: 10px;">
                 <table>
                     <tr>
-                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px;">Caring</td>
+                        <td style="width: 80px; height: 80px; text-align: center; font-size: 12px; font-family: monserrmedium;">Caring</td>
                     </tr>
                 </table>
             </div>
@@ -129,7 +129,7 @@
         code are explained and written out.
     </p>
 
-    <p style="margin-top: 430px;">
+    <p style="margin-top: 350px;">
         Careertestpro.com is a product of Making Moves B.V. - Copyright Making Moves B.V.
     </p>
 </div>
